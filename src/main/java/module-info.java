@@ -8,4 +8,5 @@ module org.example.peliculascolab {
 
     opens org.example.peliculascolab to javafx.fxml;
     exports org.example.peliculascolab;
+    requires java.sql;
 }
