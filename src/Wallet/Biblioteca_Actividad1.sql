@@ -207,12 +207,26 @@ INSERT ALL
   INTO TRANSACCIONES VALUES (10, 1, 'A22010009', 'PRESTADO', TO_DATE('2023-10-20', 'YYYY-MM-DD'), TO_DATE('2023-11-03', 'YYYY-MM-DD'), TO_DATE('2023-11-03', 'YYYY-MM-DD'), 0)
 SELECT * FROM dual;
 
+
+
+----------------------------------------------------------------------------------------------------------
+-- COMIENZA LA ACTIVIDAD DE PELICULAS DE POO
 CREATE TABLE peliculas (
     id NUMBER PRIMARY KEY,
     titulo VARCHAR2(255) NOT NULL,
     genero VARCHAR2(100),
     año NUMBER(4)
 );
+-- PELICULAS LLENADO
+INSERT ALL
+  INTO peliculas VALUES (1, 'El Padrino', 'Crimen', 1972)
+  INTO peliculas VALUES (2, 'Interestelar', 'Ciencia Ficción', 2014)
+  INTO peliculas VALUES (3, 'Parásitos', 'Drama', 2019)
+  INTO peliculas VALUES (4, 'Spider-Man: Sin Camino a Casa', 'Acción', 2021)
+  INTO peliculas VALUES (5, 'Coco', 'Animación', 2017)
+SELECT * FROM dual;
+SELECT * FROM peliculas;
+DROP TABLE peliculas;
 
 ----------------------------------------------------------------------------------------------------------
 --- CONSULTAS ---
